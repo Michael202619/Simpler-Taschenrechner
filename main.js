@@ -127,9 +127,6 @@ POINT.addEventListener("click", function() {
     if (readonly) {
         readonly = false;
     }
-    if (block_operator) {
-        block_operator = false;
-    }
     if (resultIndex) {
         DISPLAY.textContent = "";
         resultIndex = false;
@@ -168,5 +165,6 @@ function calculation() {
     if (operator == SQUARED.value) {result = (Number(DISPLAY.textContent) ** 2)};
     if (operator == SQRT.value) {result = Math.sqrt(Number(DISPLAY.textContent))};
 }
+
 
 
